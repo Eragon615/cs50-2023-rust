@@ -15,6 +15,7 @@ My wife is taking Harvard's cs50 course to learn programming. In order to encour
 * [Week 5]()
 
 # Setting up this repo
+I wanted to have all the weeks in the same repo, and to name the files similarly to cs50 so I avoided using `cargo new`. 
 
 # Included Crates
 These are the crates I used to complete challenges in some of the weeks' challenges.
