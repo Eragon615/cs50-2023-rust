@@ -1,3 +1,5 @@
+Week 1
+====
 Week 1 is population. Our goals are:  
 1. Take input from the user for our starting population
    * Must be greater than or equal to 9, lest the population stagnate.
