@@ -1,10 +1,9 @@
 [package]
-name = "mario"
+name = "week1"
 version = "0.1.0"
 edition = "2021"
 
-[dependencies]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[[bin]]
-name = "mario"
-path = "mario.rs"
+[dependencies]
+cs50 = "1.0.1"
