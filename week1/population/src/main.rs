@@ -10,11 +10,9 @@ fn main() {
 fn get_user_input(minimum: i32, text: &str) -> i32 {
     let mut input;
     loop {
-        input = match get_i32(text){
+        input = match get_i32(text) {
             Ok(s) => s,
-            Err(_) => {
-                continue
-            }    
+            Err(_) => continue    
         };
         if input >= minimum {
             break;
