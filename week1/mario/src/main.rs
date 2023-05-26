@@ -2,16 +2,15 @@ use cs50::get_i32;
 
 fn main() {
     let pyramid_height = get_input();
-//    draw_pyramid(pyramid_height);
+    draw_pyramid(pyramid_height);
 }
-
 
 fn get_input() -> i32 {
     let mut input;
     loop {
         input = match get_i32("Pyramid height: ") {
             Ok(i) => i,
-            Err(_) => continue
+            Err(_) => continue,
         };
         if input > 0 && input < 9 {
             break;
@@ -20,15 +19,22 @@ fn get_input() -> i32 {
     return input;
 }
 
-// fn draw_pyramid(input_height) -> () {
+fn draw_pyramid(input_height: i32) -> () {
+    for i in 1..=input_height {
+        let spaces = &input_height - i;
+        print_chars(spaces, ' ');
+        print_chars(i, '#');
+        print!("\n");
+    }
+}
 
-//     for i in 1..=input_height {
-
-//     }
-// }
-
-/* 
-The goals.
-Get input, positive int 1 - 8 inclusive
-Draw right aligned pyramid with height of input
-*/
+fn print_chars(number_of_times: i32, char_to_print: char) -> () {
+    let mut cycle = 0;
+    loop {
+        if cycle == number_of_times {
+            break;
+        }
+        print!("{}", char_to_print);
+        cycle += 1;
+    }
+}

@@ -1,6 +1,6 @@
-Week 1
+Week 1 Lab - Population
 ====
-Week 1 is population. Our goals are:  
+Week 1's lab is population. Our goals are:  
 1. Take input from the user for our starting population
    * Must be greater than or equal to 9, lest the population stagnate.
 2. Take input from the user for our target for the ending population
@@ -133,5 +133,10 @@ fn calculate_years(start: & i32, end: & i32) -> i32 {
 So once again we need to define two mutable variables. One, `years` needs to outlive the loop we'll be updating it in, and two `current_pop` I need to set once and update throughout the life of the loop. (Future Clayton here, actually I didn't need to. I could have passed ownership of the variable in, since I don't need it after this. Oh well, it's a single line.)  
 So we start the loop, calculate how much herd will increase and decrease, then adjust `current_pop` by those two ammounts. We also add 1 to years, and finally check to see if we've reached our target or not. Quite convintently, it seems that Rust truncates integer division, so the truncation was free. 
 
-# Summary
-So that's week one. It actually took me about 2 hours, but a lot of that was spent on false starts such as implementing my own cs50 crate only to discover someone else beat me to it, cleaning up my code by unwrapping Result<>s a bit nicer, and writing this code walkthrough. Probably only took about 30 minutes of actual work.
+# Dang you check50
+I forgot that cs50 likes to stifle creativity, and as I watched my wife submit her code for checking realized my code wouldn't pass. They don't accept all of the messages I include to make it clear to the user what they're doing. They want 3 line:
+1. Starting population
+2. Ending population
+3. Number of years to get there
+
+And they want them an exact way. To be fair, if you're seeking a job writing code, it's important you be able to write things to spec, but I still disapprove. Anyway, after deleting some messages, I'm pretty sure my code would "pass" now, would that I had a way to submit it.
