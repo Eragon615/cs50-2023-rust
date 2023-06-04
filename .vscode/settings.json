@@ -2,7 +2,7 @@
     "rust-analyzer.linkedProjects": [
         "./week1/population/Cargo.toml",
         "./week1/mario/Cargo.toml",
-        "./week1/cash/Cargo.toml"
-
+        "./week1/cash/Cargo.toml",
+        "./week2/scrabble/Cargo.toml"
     ]
 }
