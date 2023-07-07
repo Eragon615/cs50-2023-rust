@@ -8,12 +8,29 @@ My wife is taking Harvard's cs50 course to learn programming. In order to encour
 * [Feedback](#feedback) - Want to tell me a better way to do things?
 
 # Links to Weeks
-* [Week 0](https://github.com/Eragon615/cs50-2023-rust/blob/main/week0/README.md)
-* Week 1 - [population](https://github.com/Eragon615/cs50-2023-rust/blob/main/week1/population/README.md) [mario](https://github.com/Eragon615/cs50-2023-rust/blob/main/week1/mario/README.md) [cash](https://github.com/Eragon615/cs50-2023-rust/blob/main/week1/cash/README.md)
-* [Week 2]()
-* [Week 3]()
-* [Week 4]()
-* [Week 5]()
+* Week 0 **Scratch**
+    * [About that...](https://github.com/Eragon615/cs50-2023-rust/blob/main/week0/README.md)
+* Week 1 **"C"**
+    * Labs:
+        * [population](https://github.com/Eragon615/cs50-2023-rust/blob/main/week1/population/README.md)
+    * Problem Sets:
+        * [mario](https://github.com/Eragon615/cs50-2023-rust/blob/main/week1/mario/README.md) 
+        * [cash](https://github.com/Eragon615/cs50-2023-rust/blob/main/week1/cash/README.md)
+* Week 2 **Arrays**
+    * Labs:
+        * [scrabble](https://github.com/Eragon615/cs50-2023-rust/blob/main/week2/scrabble/README.md)
+    * Problem Sets:
+        * [readability](https://github.com/Eragon615/cs50-2023-rust/blob/main/week2/readability/README.md)
+* Week 3 **Algorithms**
+    * Labs:
+    * Problem Sets:
+* Week 4 **Memory**
+* Week 5 **Data Structures**
+* Week 6 **"Python"**
+* Week 7 **SQL**
+* Week 8 **HTML, CSS, "Javascript"**
+* Week 9 **"Flask"**
+* Week 10 **Emoji**
 
 # Setting up this repo
 I wanted to have all the weeks in the same repo, and to name the files similarly to cs50 so I avoided using `cargo new`.  
