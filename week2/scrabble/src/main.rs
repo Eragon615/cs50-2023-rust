@@ -1,5 +1,7 @@
 use cs50::get_string;
 
+const POINTS: [usize; 26] = [1 ,3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10];
+
 fn main() {
     // Get input words from both players
     let word1 = get_string("Player 1: ").unwrap();
@@ -20,7 +22,6 @@ fn main() {
 }
 
 fn compute_score(input_word: String) -> usize {
-    let points: [usize; 26] = [1 ,3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10];
     let mut score: usize = 0;
     for char in input_word.chars() {
         let index: usize = match char as usize {
@@ -28,7 +29,7 @@ fn compute_score(input_word: String) -> usize {
             97..=122 => char as usize - 97,
             _ => continue
         };
-    score += points[index];
+    score += POINTS[index];
     }
     return score;
 }

@@ -8,9 +8,17 @@ Our lab for Week 2 is to make a kind of simplified version of the board game Scr
 3. Print which "player's" word wins based on that score.
 
 # Times may change you
-So far I've been relatively good about keeping my code pretty similar to the classes. But because of Rust's lifetimes and scope constraints on variables, I have to decide what to do about the array they provide. The simple solution would be to just move it into the `compute_score()` function. However, that means that the array gets recreated every time the function is called. In our case, the function is called twice, so the overhead is pretty tiny. But I'm still pretty sure it's bad form. After some deliberation though, I'm going to do it this way simply to keep my code as close to the original as possible. 
+~~So far I've been relatively good about keeping my code pretty similar to the classes. But because of Rust's lifetimes and scope constraints on variables, I have to decide what to do about the array they provide. The simple solution would be to just move it into the `compute_score()` function. However, that means that the array gets recreated every time the function is called. In our case, the function is called twice, so the overhead is pretty tiny. But I'm still pretty sure it's bad form. After some deliberation though, I'm going to do it this way simply to keep my code as close to the original as possible.~~
 
-How else could I do it though? My thought was a giant match statement. A closure can also read things outside of it's scope, so that could have worked too.
+~~How else could I do it though? My thought was a giant match statement. A closure can also read things outside of it's scope, so that could have worked too.~~
+
+As it turns out, I was very, very wrong. `const` is a keyword, and it works just like any other language. I have no clue why I though it didn't exist in rust. So here I am, weeks later, fixing this.
+
+```rust
+const POINTS: [usize; 26] = [1 ,3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10];
+```
+Hey, that was easy.
+
 
 # Nice template
 This lab, and several previous problems provide a nice starting off point for the code you're writing. You only really need to write the `compute_score()` function, and a tiny `if` statement to print the winner. Of course, since I'm not actually taking the class, and since I'm translating it to Rust, I've got a bit more to do, but it seems like a nice improvement over what I remember from when I took the course a few years ago.
@@ -45,7 +53,6 @@ I'm not sure if Rust has an `isupper()` and `islower()` function, and didn't eve
 
 ```rust
 fn compute_score(input_word: String) -> usize {
-    let points: [usize; 26] = [1 ,3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10];
     let mut score: usize = 0;
     for char in input_word.chars() {
         let index: usize = match char as usize {
@@ -53,7 +60,7 @@ fn compute_score(input_word: String) -> usize {
             97..=122 => char as usize - 97,
             _ => continue
         };
-    score += points[index];
+    score += POINTS[index];
     }
     return score;
 }
