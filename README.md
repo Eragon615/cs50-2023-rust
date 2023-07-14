@@ -16,6 +16,7 @@ My wife is taking Harvard's cs50 course to learn programming. In order to encour
     * Problem Sets:
         * [mario](https://github.com/Eragon615/cs50-2023-rust/blob/main/week1/mario/README.md) 
         * [cash](https://github.com/Eragon615/cs50-2023-rust/blob/main/week1/cash/README.md)
+        * [credit](https://github.com/Eragon615/cs50-2023-rust/blob/main/week1/credit/README.md)
 * Week 2 **Arrays**
     * Labs:
         * [scrabble](https://github.com/Eragon615/cs50-2023-rust/blob/main/week2/scrabble/README.md)
@@ -44,4 +45,4 @@ These are the crates I used to complete challenges in some of the weeks' challen
 
 | Crate Name | Version | Week(s) Used | Description |
 | --- | --- | --- | --- |
-| cs50 | 1.0.1 | 1 | A rust implementation of cs50.h from the cs50 class. |
+| cs50 | 1.0.1 | 1, 2 | A rust implementation of cs50.h from the cs50 class. |

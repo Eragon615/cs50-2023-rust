@@ -3,6 +3,7 @@
         "./week1/population/Cargo.toml",
         "./week1/mario/Cargo.toml",
         "./week1/cash/Cargo.toml",
+        "./week1/credit/Cargo.toml",
         "./week2/scrabble/Cargo.toml",
         "./week2/readability/Cargo.toml"
     ]
