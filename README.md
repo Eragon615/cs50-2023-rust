@@ -22,6 +22,7 @@ My wife is taking Harvard's cs50 course to learn programming. In order to encour
         * [scrabble](https://github.com/Eragon615/cs50-2023-rust/blob/main/week2/scrabble/README.md)
     * Problem Sets:
         * [readability](https://github.com/Eragon615/cs50-2023-rust/blob/main/week2/readability/README.md)
+        * [substitution](https://github.com/Eragon615/cs50-2023-rust/blob/main/week2/substitution/README.md)
 * Week 3 **Algorithms**
     * Labs:
     * Problem Sets:

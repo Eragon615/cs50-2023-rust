@@ -1,4 +1,4 @@
-Week 1 Problem (Challenge) - Credit
+Week 1 Problem 2 (Challenge) - Credit
 ===
 I got a wild hare and decided to go do the harder problem sets while I wait for my wife to catch up. Besides, I wanted a little more challenge that I had been getting so far. Hoo boy, I got what I wanted. I have no clue how you're "supposed" to solve this, but I'm nearly positive it wasn't the way I did it. In fact, I plan to go look up other solutions now that I've completed this. My code is not pretty, and I'm not proud of it. Still, it does work. So there's that.  
 Here were the goals:
