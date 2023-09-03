@@ -23,6 +23,7 @@ My wife is taking Harvard's cs50 course to learn programming. In order to encour
     * Problem Sets:
         * [readability](https://github.com/Eragon615/cs50-2023-rust/blob/main/week2/readability/README.md)
         * [substitution](https://github.com/Eragon615/cs50-2023-rust/blob/main/week2/substitution/README.md)
+        * [wordle50](https://github.com/Eragon615/cs50-2023-rust/blob/main/week2/wordle50/README.md)
 * Week 3 **Algorithms**
     * Labs:
     * Problem Sets:
@@ -47,3 +48,5 @@ These are the crates I used to complete challenges in some of the weeks' challen
 | Crate Name | Version | Week(s) Used | Description |
 | --- | --- | --- | --- |
 | cs50 | 1.0.1 | 1, 2 | A rust implementation of cs50.h from the cs50 class. |
+| rand | 0.8.5 | 2 | Used for psuedorandom functions |
+| colored | 2.0.4 | 2 | Used in Wordle50 to display colored backgrounds for the text. |
