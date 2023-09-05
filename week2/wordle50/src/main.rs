@@ -53,11 +53,9 @@ fn main() {
         // Calculate score for the guess
         let score: usize = check_word(&guess, &wordsize, &mut status, &choice);
 
-        print!("Guess {}: ", cycle + 1);
+        print!("Guess {}: ", cycle);
 
         print_word(guess, &wordsize, status);
-
-        cycle += 1;
 
         if score == Correctness::EXACT as usize * wordsize {
             won = true;
@@ -66,6 +64,8 @@ fn main() {
         if cycle >= guesses {
             break;
         }
+
+        cycle += 1;
     }
 
     // Print the game's results
