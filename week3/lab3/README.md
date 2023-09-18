@@ -1,0 +1,1 @@
+Unfortunately, the lab this time around is to just deduce which sorting algorithm is in which binary. I'm here to write rust, so I can't really do that. Maybe I'll come back later and write the three algorithms in my own Rust and compare them to the provided C binaries (but I probably won't actually do it).

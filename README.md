@@ -27,7 +27,9 @@ My wife is taking Harvard's cs50 course to learn programming. In order to encour
         * [wordle50](https://github.com/Eragon615/cs50-2023-rust/blob/main/week2/wordle50/README.md)
 * Week 3 **Algorithms**
     * Labs:
+        * [can't...](https://github.com/Eragon615/cs50-2023-rust/blob/main/week3/lab3/README.md)
     * Problem Sets:
+        * [plurality](https://github.com/Eragon615/cs50-2023-rust/blob/main/week3/plurality/README.md)
 * Week 4 **Memory**
 * Week 5 **Data Structures**
 * Week 6 **"Python"**
